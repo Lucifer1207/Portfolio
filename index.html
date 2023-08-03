@@ -17,25 +17,29 @@
   top:0;
   left:0;
   width:100%;
+  height: 60px;
+  border: 2px solid burlywood;
   display:flex;
   justify-content:flex-end;
+  
 }
 #nav-list{
   display:flex;
   flex-direction:row;
+  
 }
 li{
   list-style:none;
 }
 a{
-  color:white;
+  color:black;
+  font-weight: 800;
+  -webkit-text-stroke: 1px burlywood;
   text-decoration:none;
-  font-size:2em;
-  padding:1rem 2rem;
+  font-size:2.3em;
+  padding:4rem 4rem;
 }
-a:hover{
-  background-color:#45567d;
-}
+
 
 #welcome-section{
   width:110%;
@@ -51,7 +55,11 @@ a:hover{
     #181719 100%
   );
 }
-
+h2{
+  color: black;
+  font-weight: 800;
+  -webkit-text-stroke: 1px burlywood;
+}
 h1{
   color:white;
   font-size:4rem;
@@ -65,17 +73,38 @@ h1{
   font-style:italic;
   font-weight:100;
   margin-top:0;
+  margin-right: 15%;
   padding:0;
+}
+
+#welcome-section > h1{
+  margin-right: 15%;
 }
 
 .projects{
   width:100%;
+  height:1040px;
 margin:0;
 padding:10rem 2rem;
 text-align:center;
-background-color:#45567d;
+background-color:#0e2252;
 }
-
+.projects1{
+  width:100%;
+  height:1040px;
+margin:0;
+padding:10rem 2rem;
+text-align:center;
+background-color:#041232;
+}
+.projects2{
+  width:100%;
+  height:1040px;
+margin:0;
+padding:10rem 2rem;
+text-align:center;
+background-color:#1f3466;
+}
 h2{
   font-size: 3.2rem;
   color:white;
@@ -105,11 +134,11 @@ h2{
 .projects-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-  grid-gap:4rem;
+  grid-gap:2rem;
 width:100%;
 max-width:1280px;
 margin:0 auto;
-margin-bottom:6rem;
+margin-bottom:4rem;
 }
 .bt{
   width:100%;
@@ -118,7 +147,7 @@ margin-bottom:6rem;
   color: bisque;
 }
 #contact{
-  background-color:#303841;
+  background-color:#212325;
   width:100%;
   height:50vh;
   padding:1rem 2rem;
@@ -143,7 +172,7 @@ align-items:center;
 
 .bt2{
   width:320px;
-  height: 415px;
+  height: 362px;
 }
     </style>
   <body>
@@ -160,12 +189,13 @@ align-items:center;
       <li>
          <a href="#contact">Contact</a>
       </li>  
+      </ul>
     </nav>
     <section id="welcome-section" class="welcome-section">
       <h1>Hey I am Lucifer</h1>
-      <p>a web developer</p>
+      <p>A Full Stack Developer</p>
     </section>
-    <section id="projects" class="projects">
+    <section id="projects1" class="projects1">
       <h2>There are some of my Major Projects</h2>
       <div class="projects-grid">
         
@@ -183,8 +213,8 @@ align-items:center;
         </a>  
          
       </div>
-      
-
+      </section>
+      <section id="projects" class="projects">
       <h2>There are some of my Minor Projects</h2>
       <div class="projects-grid">
        
@@ -207,7 +237,8 @@ align-items:center;
         
       </div>
 
-
+</section>
+<section id="projects2" class="projects2">
       <h2>There are some of my Micro Projects</h2>
       <div class="projects-grid">
         <a href="file:///home/lucifer/Myprojects/tributePage.html">
@@ -220,13 +251,11 @@ align-items:center;
         </a>   
              <a href="https://lucifer1207.github.io/LoginIn/">
           <img  class="bt2" src="Log.jpg"/>
-          <button class="btn btn-secondary bt">Login and Signup</button>
+          <button class="btn btn-secondary bt">Login and Signup Page</button>
          </a>   
              
         
       </div>
-
-
     </section>
     <section id="contact" class="contact">
 <div id="contact-header">
